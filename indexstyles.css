@@ -1,0 +1,334 @@
+/* ───────── BASE & LAYOUT ───────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #f0fcf8; /* very light mint */
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background: #90ee90; /* light green */
+}
+
+header h1 {
+  color: #004d40; /* dark teal */
+}
+
+/* ───────── NAVIGATION BAR ───────── */
+nav {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #add8e6; /* baby blue */
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+nav li:hover {
+  background: #90ee90;
+}
+
+nav li.active {
+  background: #fff;
+  color: #004d40;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ───────── MAIN CONTENT ───────── */
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 4px;
+  min-height: 300px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+main.visible {
+  opacity: 1;
+}
+
+/* ───────── FOOD SECTION & GRID ───────── */
+.food-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.food-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #004d40;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.food-card img {
+  width: 100%;
+  display: block;
+}
+
+.food-card h3 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  color: #004d40;
+}
+
+/* ───────── MODAL / LIGHTBOX ───────── */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  position: relative;
+  background: #fff;
+  border-radius: 6px;
+  max-width: 600px;
+  width: 90%;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+/* ───────── MODAL CONTROLS & DETAILS ───────── */
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #004d40;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #90ee90;
+}
+
+.modal-address {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #004d40;
+  text-align: center;
+}
+
+.modal-address a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.modal-address a:hover {
+  text-decoration: none;
+}
+
+.price-tier {
+  font-size: 1.2rem;
+  color: #e65100;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.price-tier span {
+  font-size: 1.4rem;
+  padding: 0 2px;
+  filter: drop-shadow(0 0 2px #90ee90);
+}
+
+/* ───────── MAP ───────── */
+.map-container {
+  width: 100%;
+  height: 200px;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* ───────── IMAGE GALLERY ───────── */
+.modal-gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.modal-gallery img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 4px solid #90ee90;
+  border-top: 4px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  z-index: 220;
+}
+
+.spinner.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gallery-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  color: #004d40;
+  transition: color 0.2s ease;
+}
+
+.gallery-arrow:hover {
+  color: #90ee90;
+}
+
+/* ───────── RESPONSIVE ADJUSTMENTS ───────── */
+@media (max-width: 1024px) {
+  .food-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .modal-content {
+    width: 95%;
+    padding: 1rem;
+  }
+  .modal-gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .modal-gallery img {
+    max-height: 200px;
+  }
+  .gallery-arrow {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .map-container {
+    height: 180px;
+  }
+  .modal-address {
+    font-size: 0.95rem;
+  }
+  #modal-link {
+    display: inline-block;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  .price-tier span {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+  .food-card h3 {
+    font-size: 0.9rem;
+  }
+  .gallery-arrow {
+    font-size: 1.4rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+
+

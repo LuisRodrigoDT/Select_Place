@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="indexstyles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Map Script -->
+  <script defer src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <title>HI</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li data-page="home" class="active">Home</li>
+      <li data-page="activities">Activities</li>
+      <li data-page="food">Food</li>
+      <li data-page="drinks">Drinks</li>
+    </ul>
+  </nav>
+
+  <!-- Main Page Content -->
+  <main id="content">
+    <!-- Section HTML like home.html / food.html will be injected here -->
+  </main>
+
+  <!-- Shared Modal (used by both food & drinks) -->
+  <div id="food-modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close">×</button>
+
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+
+      <!-- Gallery -->
+      <div class="modal-gallery">
+        <button class="gallery-arrow prev">‹</button>
+        <img id="modal-image" alt="Gallery image" />
+        <div id="image-spinner" class="spinner hidden"></div>
+        <button class="gallery-arrow next">›</button>
+      </div>
+
+      <!-- Price tier -->
+      <div class="price-tier" id="modal-price"></div>
+
+      <!-- Website link -->
+      <a id="modal-link" target="_blank">View Menu & Info</a>
+
+      <!-- Address / Directions -->
+      <p class="modal-address">
+  <a id="modal-address-link" target="_blank" rel="noopener"></a>
+</p>
+
+      <!-- Map container -->
+      <div class="map-container" id="modal-map"></div>
+    </div>
+  </div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
