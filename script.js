@@ -282,22 +282,104 @@ const drinkData = [
     price: "$-$$",
     images: [
       "/img/people1.png",
-      "/img/drink1b.jpg",
+      "/img/matcha1.jpg",
       "/img/drink1c.jpg"
-    ]
+    ],
   },
   {
-    title: "Mellow Beans",
-    desc: "Local coffee shop offering pour-overs, teas, and pastries.",
-    address: "420 Coffee Ln, Lansing, MI",
-    coords: [42.7348, -84.5502],
-    website: "https://mellowbeans.com",
+    title: "Premium Matcha Maiko",
+    desc: "Get matcha iced and the icecream version and ube icecream is soo good",
+    address: "5082 Rochester Rd, Troy, MI 48085",
+    coords: [42.59831407906098, -83.11033801122274],
+    website: "https://www.matchacafe-maiko.com/eng/menu/",
     price: "$",
     images: [
-      "/img/drink2.jpg",
-      "/img/drink2b.jpg"
-    ]
-  }
+      "img/matchamaiko1.jpg",
+      "img/matcha2.jpg",
+      "img/matcha3.jpg"],
+  },
+   {
+    title: "Small World Coffee",
+    desc: "Pop up shop with limited openings",
+    address: "2895 E Grand Blvd, Detroit, MI 48202",
+    coords: [42.37815119549004, -83.05604894635572],
+    website: "https://smlwrld.square.site/#44NLYL4GIY4YRKPBJKQADKMY",
+    price: "$",
+    images: [
+      "img/smll1.png",
+      "img/smll2.png",
+      "img/smll3.png"
+    ],
+  },
+  {
+    title: "Umai Cafe",
+    desc: "We are dedicated to bountiful waffles and decadent sushi at our warm and cozy cafe.",
+    address: "3277 Rochester Rd, Troy, MI 48083",
+    coords: [42.56736866391196, -83.12908862350716],
+    website: "https://umaicafe.square.site/",
+    price: "$-$$",
+    images: [
+      "img/umai2.png",
+      "img/umai3.png",
+      "img/umai4.png"
+    ],
+  },
+  {
+    title: "Utopia Coffee",
+    desc: "Blending tradition with innovation for your perfect cup of coffee  ",
+    address: "766 W Big Beaver Rd, Troy, MI 48084",
+    coords: [42.56300875315195, -83.16403909538454],
+    website: "https://utopia-coffee.menu-world.com/menu",
+    price: "$-$$",
+    images: [
+      "img/utopia1.png",
+      "img/utopia2.png"
+    ],
+  },
+
+   {
+    title: "A-Ok Cafe (inside sommerset mall)",
+    desc: "in SOmmerset mall the wiener dog logo ",
+    address: "2800 W Big Beaver Rd, Troy, MI 48084",
+    coords: [42.563037790158354, -83.18463259259961],
+    website: "https://www.instagram.com/a.okcafe/?hl=en",
+    price: "$-$$",
+    images: [
+      "img/ok1.png",
+      "img/ok2.png",
+      "img/ok3.png"
+    ],
+  },
+
+  {
+    title: "Experience Muse",
+    desc: "where andy live ",
+    address: "2133 15 Mile Rd, Sterling Heights, MI 48310",
+    coords: [42.55282881432926, -83.0786198707082],
+    website: "https://www.instagram.com/experience_muse/?hl=en",
+    price: "$-$$",
+    images: [
+      "img/emuse2.png",
+      "img/emuse3.png",
+      "img/emuse4.png",
+      "img/emuse5.png"
+    ],
+  },
+
+  {
+    title: "Cafe Sous Terre",
+    desc: "Serious coffee, serious cocktAils, delicious French food and fresh bagels ",
+    address: "445 W Forest Ave, Detroit, MI 48201 ",
+    coords: [42.35370601847352, -83.06629895398818],
+    website: "https://www.cafesousterre.com/menu/",
+    price: "$-$$",
+    images: [
+      "img/sous2.png",
+      "img/sous3.png",
+      "img/sous4.png",
+    ],
+  },
+  
   // …add entries index 2–11 here…
 ];
 
