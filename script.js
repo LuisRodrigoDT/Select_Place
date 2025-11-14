@@ -281,9 +281,9 @@ const drinkData = [
     website: "https://www.instagram.com/wagonwhisked/?hl=en",
     price: "$-$$",
     images: [
-      "/img/people1.png",
-      "/img/matcha1.jpg",
-      "/img/drink1c.jpg"
+      "img/people1.png",
+      "img/matcha1.jpg",
+      "img/drink1c.jpg"
     ],
   },
   {
@@ -380,6 +380,178 @@ const drinkData = [
     ],
   },
   
+  {
+    title: "Coffee Hause (inside Sommerset Mall)",
+    desc: "Practicing excellence in coffee",
+    address: "2800 W Big Beaver Rd, Troy, MI 48084 ",
+    coords: [42.55990840434175, -83.18392898998074],
+    website: "https://www.instagram.com/coffeehaus/?hl=en",
+    price: "$-$$",
+    images: [
+      "img/hause1.png"
+    ],
+  },
+{
+    title: "Unitea Cafe - Ann Arbor",
+    desc: "Practicing excellence in coffee",
+    address: "522 E William St, Ann Arbor, MI 48104 ",
+    coords: [42.27805795784989, -83.74235589184482],
+    website: "https://order.snackpass.co/uniteacaphe",
+    price: "$-$$",
+    images: [
+      "img/unitea2.png",
+      "img/unitea3.png",
+      "img/unitea4.png",
+      "img/unitea5.png",
+      "img/unitea6.png"
+    ],
+  },
+
+  {
+    title: "Hudson Place Bloomfield ",
+    desc: "At HUDSON’S PLACE, we believe wellness begins with what you eat—and how it’s made. ",
+    address: "1087 W Long Lake Rd, Bloomfield Township, MI 48302",
+    coords: [42.58116276829012, -83.2825768458009],
+    website: "https://www.hudsonsplacepizzeria.com/",
+    price: "$-$$",
+    images: [
+      "img/hudson1.png",
+      "img/hudson2.png"
+    ],
+  },
+
+  {
+    title:  "Dose Detroit ",
+    desc: " the pattern of coffee, plants, and people.",
+    address:"3706 4th St, Detroit, MI 48201",
+    coords: [42.3461090306725, -83.06705463046931],
+    website: "https://www.dose-detroit.com/",
+    price: "$-$$",
+    images: [
+      "img/dose2.png",
+      "img/dose3.png",
+      "img/dose4.png"
+    ],
+  },
+
+  {
+    title:  "The Fern Royal Oak " ,
+    desc: " Your cozy retreat for coffee",
+    address:"406 E 4th St, Royal Oak, MI 48067",
+    coords: [42.48728811785191, -83.1402163592982],
+    website: "https://the-fern.menu-world.com/",
+    price: "$-$$",
+    images: [
+      "img/fern1.png",
+      "img/fern2.png",
+      "img/fern3.png"
+    ],
+  },
+
+  {
+    title:  "Milwaukee Caffe" ,
+    desc: " Milwaukee Caffè is an Italian-inspired coffee bar located in Detroit's Milwaukee Junction neighborhood",
+    address:"447 E Milwaukee Ave, Detroit, MI 48202",
+    coords: [42.371470150868056, -83.06691023592877],
+    website: "https://www.milwaukeecaffe.com/",
+    price: "$-$$",
+    images: [
+      "img/milk1.png",
+      "img/milk3.png"
+    ],
+  },
+
+  {
+    title:  "H Tea " ,
+    desc: " HTEA CAFE is a modern bubble tea shop ",
+    address:"515 E Grand River Ave E, East Lansing, MI 48823",
+    coords: [42.73410726545598, -84.4777759323007],
+    website: "https://www.hteacafe.com/",
+    price: "$-$$",
+    images: [
+      "img/htea1.png",
+      "img/htea2.png",
+      "img/htea3.png",
+      "img/htea4.png"
+    ],
+  },
+
+  {
+    title:  " Jay Jays Bistro " ,
+    desc: " Featuring a Unique Mediterranean, Italian, American Menu ",
+    address:"2995 E Long Lake Rd, Troy, MI 48085",
+    coords: [42.59357725572735, -83.09062833415786],
+    website: "https://www.jayjaysbistro.com/",
+    price: "$-$$",
+    images: [
+      "img/jay1.png",
+      "img/jay2.png",
+      "img/jay3.png",
+      "img/jay4.png",
+      "img/jay5.png",
+      "img/jay6.png"
+    ],
+  },
+
+  {
+    title:  " Haraz Coffee House " ,
+    desc: " authentic Yemeni coffee, catering, premium blends, machines, and expert courses",
+    address:"501 E Grand River Ave, East Lansing, MI 48823",
+    coords: [42.7341199021066, -84.47840814764373],
+    website: "https://harazcoffeehouse.com/pages/menu",
+    price: "$-$$",
+    images: [
+      "img/haraz2.png",
+      "img/haraz3.png",
+    ],
+  },
+
+  {
+    title:  " Mood Coffee " ,
+    desc: " Your daily dose of caffeine and positivity",
+    address:"5385 Crooks Rd, Troy, MI 48098",
+    coords: [42.596872128602364, -83.16953024580009],
+    website: "https://www.instagram.com/moodcoffeetroy/?hl=en",
+    price: "$-$$",
+    images: [
+      "img/mood2.png",
+      "img/mood3.png"
+    ],
+  },
+
+  {
+    title:  " Cotton Cake Coffee " ,
+    desc: " LIGHT AND FLUFFY, JAPANESE CHEESECAKE IS A DELICIOUSLY MOUTHWATERING GIFT FOR A REAL CHEESE",
+    address:"4972 John R Rd, Troy, MI 48085",
+    coords: [42.59227183412827, -83.10876474580036],
+    website: "https://www.cottoncaketroy.com/",
+    price: "$-$$",
+    images: [
+      "img/cotton2.png",
+      "img/cotton3.png",
+      "img/cotton4.png",
+      "img/cotton5.png"
+    ],
+  },
+
+  {
+    title:  " Seven Sunday Coffee " ,
+    desc: " Experience premium coffee and matcha made with the highest quality ingredients.",
+    address:"921 W Big Beaver Rd, Troy, MI 48084",
+    coords: [42.56196342628705, -83.16560061696606],
+    website: "https://www.sevensundayscoffee.com/",
+    price: "$-$$",
+    images: [
+      "img/sunday1.png",
+      "img/sunday2.png",
+      "img/sunday3.png",
+      "img/sunday4.png"
+    ],
+  },
+
+
+
+
   // …add entries index 2–11 here…
 ];
 
